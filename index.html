@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Test</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+
+		<header class="header">
+				<div class="header__top">
+					<div class="container header-container">
+						<nav class="top-menu">
+							<i class="material-icons top-menu__icon">menu</i>
+							<ul class="top-menu__list">
+								<li class="top-menu__list-item"><a href="#" class="top-menu__list-item-link top-menu__list-item-link_mg-left">Главная</a></li>
+								<li class="top-menu__list-item"><a href="#" class="top-menu__list-item-link">О компании</a></li>
+								<li class="top-menu__list-item"><a href="#" class="top-menu__list-item-link">Ссылка 1</a></li>
+								<li class="top-menu__list-item"><a href="#" class="top-menu__list-item-link">Ссылка 2</a></li>
+								<li class="top-menu__list-item"><a href="#" class="top-menu__list-item-link">Ссылка 3</a></li>
+							</ul>
+						</nav>
+						<a href="#" id="sign-in-btn" class="action-link">
+							<i class="material-icons action-link__icon">person_outline</i>
+							<span class="action-link__text action-link__text_disp_none">&nbsp;Вход</span>
+						</a>
+					</div>
+				</div>
+				<div class="container header__bottom">
+					<div class="logo">
+						<a href="index.html" class="logo__link">
+							<img src="images/logo.jpg" class="logo__img" alt="Лого">
+						</a>
+					</div>
+					<div class="call-me">
+						<div class="field">
+							<span class="call-me__phone">+380&nbsp;98&nbsp;170&nbsp;00&nbsp;740</span>
+							<span class="call-me__phone">+380&nbsp;98&nbsp;170&nbsp;00&nbsp;740</span>
+						</div>
+						<a href="#" id="callback-btn" class="action-link">
+							<i class="fa fa-phone action-link__icon action-link__icon_size_20px"></i>
+							<span class="action-link__text">&nbsp;&nbsp;Перезвонить мне</span>
+						</a>
+					</div>
+					<div class="info">
+						<div class="info__icon-container">
+							<a href="#" class="info__icon info__icon-compare">Сравнение</a>
+							<div id="info__icon-compare" class="info__item-count">
+								<div class="info__item-count-text"></div>
+								<div class="info__item-count-arrow"></div>
+							</div>
+						</div>
+						<div class="info__icon-container">
+							<a href="#" class="info__icon info__icon-favorite">Избранное</a>
+							<div id="info__icon-favorite" class="info__item-count">
+								<div class="info__item-count-text"></div>
+								<div class="info__item-count-arrow"></div>
+							</div>
+						</div>
+						<div class="info__icon-container">
+							<a href="#" class="info__icon info__icon-basket">Корзина</a>
+							<div id="info__icon-basket" class="info__item-count">
+								<div class="info__item-count-text"></div>
+								<div class="info__item-count-arrow"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</header>
+
+		<main>
+			<section class="container options">
+				<nav class="menu">
+					<div class="menu__header">
+						<i class="material-icons menu__header-icon">sort</i>
+						<h2 class="menu__header-text">Меню</h2>
+					</div>
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-item-link">
+								<span class="menu__list-item-text">Ссылка 1</span>
+								<i class="material-icons menu__list-item-arrow">keyboard_arrow_right</i>
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-item-link">
+								<span class="menu__list-item-text">Ссылка 2</span>
+								<i class="material-icons menu__list-item-arrow">keyboard_arrow_right</i>
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-item-link">
+								<span class="menu__list-item-text">Ссылка 3</span>
+								<i class="material-icons menu__list-item-arrow">keyboard_arrow_right</i>
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-item-link">
+								<span class="menu__list-item-text">Ссылка 4</span>
+								<i class="material-icons menu__list-item-arrow">keyboard_arrow_right</i>
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-item-link">
+								<span class="menu__list-item-text">Ссылка 5</span>
+								<i class="material-icons menu__list-item-arrow">keyboard_arrow_right</i>
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-item-link">
+								<span class="menu__list-item-text">Ссылка 6</span>
+								<i class="material-icons menu__list-item-arrow">keyboard_arrow_right</i>
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-item-link">
+								<span class="menu__list-item-text">Ссылка 7</span>
+								<i class="material-icons menu__list-item-arrow">keyboard_arrow_right</i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<form action="#" method="get" class="search-form">
+					<input type="search" name="search" placeholder="Поиск по сайту" class="search-form__field" minlength="2" required>
+						<select name="category" class="search-form__select">
+							<option value="all">Все категории</option>
+							<option value="category 1">Категория 1</option>
+							<option value="category 2">Категория 2</option>
+							<option value="category 3">Категория 3</option>
+						</select>
+					<button type="submit" class="action-link search-form__button">Поиск</button>
+				</form>
+				<div class="filter">
+					<ul class="filter__list">
+						<li class="filter__list-item">
+							<a href="#" class="filter__list-link filter__list-link-1 filter__list-link_active">Ссылка 1</a>
+						</li>
+						<li class="filter__list-item">
+							<a href="#" class="filter__list-link filter__list-link-2">Ссылка 2</a>
+						</li>
+						<li class="filter__list-item">
+							<a href="#" class="filter__list-link filter__list-link-3">Ссылка 3</a>
+						</li>
+						<li class="filter__list-item">
+							<a href="#" class="filter__list-link filter__list-link-4">Ссылка 4</a>
+						</li>
+						<li class="filter__list-item">
+							<a href="#" class="filter__list-link filter__list-link-5">Ссылка 5</a>
+						</li>
+					</ul>
+					<form action="#" method="get" class="filter-form">
+						<div class="filter-form__switcher">
+							<button class="filter-form__tab filter-form__tab-1">Tab 1</button>
+							<button class="filter-form__tab filter-form__tab-2" style="background: var(--orange); color: white;">Tab 2</button>
+						</div>
+						<div class="filter-form__selects">
+							<div class="filter-form__select-container">
+								<select name="select-1" class="filter-form__select">
+									<option value="1" selected>Select 1</option>
+									<option value="2">Select 2</option>
+									<option value="3">Select 3</option>
+								</select>
+							</div>
+							<div class="filter-form__select-container">
+								<select name="select-2" class="filter-form__select">
+									<option value="1" selected>Select 2</option>
+									<option value="2">Select 3</option>
+									<option value="3">Select 4</option>
+								</select>
+							</div>
+							<div class="filter-form__select-container">
+								<select name="select-3" class="filter-form__select">
+									<option value="1" selected>Select 3</option>
+									<option value="2">Select 4</option>
+									<option value="3">Select 5</option>
+								</select>
+							</div>
+							<div class="filter-form__select-container">
+								<select name="select-4" class="filter-form__select">
+									<option value="1" selected>Select 4</option>
+									<option value="2">Select 5</option>
+									<option value="3">Select 6</option>
+								</select>
+							</div>
+							<div class="filter-form__select-container filter-form__select-5" style="display: none;">
+								<select name="select-5" class="filter-form__select">
+									<option value="1" selected>Select 5</option>
+									<option value="2">Select 6</option>
+									<option value="3">Select 7</option>
+								</select>
+							</div>
+							<div class="filter-form__select-container filter-form__select_center filter-form__select_left">
+								<select name="select-6" class="filter-form__select">
+									<option value="1" selected>Select 6</option>
+									<option value="2">Select 7</option>
+									<option value="3">Select 8</option>
+								</select>
+							</div>
+							<div class="filter-form__select-container filter-form__select-7" style="display: none;">
+								<select name="select-7" class="filter-form__select">
+									<option value="1" selected>Select 7</option>
+									<option value="2">Select 8</option>
+									<option value="3">Select 9</option>
+								</select>
+							</div>
+							<div class="filter-form__price-range">
+								<div class="filter-form__price-range-text">Цена</div>
+								<div class="filter-form__price-range-container">
+									<input type="number" name="min-price" placeholder="0" default="0" class="filter-form__input" min="0" step="1">
+									<input type="number" name="max-price" placeholder="250000" default="250000" class="filter-form__input" min="1" step="1">
+								</div>
+							</div>
+						</div>
+						<div class="filter-form__buttons-container">
+							<button type="reset" class="filter-form__button filter-form__button-reset">
+								<i class="material-icons filter-form__button-icon">close</i>
+								<span>Очистить фильтр</span>
+							</button>
+							<button type="submit" class="filter-form__button filter-form__button-filter">Применить фильтр</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="container items">
+				<div class="items__header">
+					<h1 class="items__header-text">Карточки товаров</h1>
+					<a href="#" class="items__header-link">Ссылка в каталог</a>
+				</div>
+				<div class="items__content">
+					<div class="item">
+						<div class="item__mark-container"><span class="item__mark">Mark</span></div>
+						<a href="#" class="item__link">
+							<h2 class="item__title">Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany</h2>
+						</a>
+						<div class="item__rating">
+							<span class="item__stars">
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<a href="#" class="item__rating-link">Отзывы (10)</a>
+							</span>
+							<span class="item__stock">В наличии: 24шт.</span>
+						</div>
+						<div class="item__images">
+							<div class="item__img-container">
+								<img src="images/summer.jpg" alt="Summer" class="item__img">
+								<img src="images/passenger-car.jpg" alt="Car" class="item__img">
+								<img src="images/new.jpg" alt="New" class="item__img">
+							</div>
+							<div class="item__photo-container">
+								<img src="images/item-photo-1.jpg" alt="Item photo" class="item__photo">
+							</div>
+						</div>
+						<div class="labels">
+							<img src="images/new-model.jpg" alt="New item" class="item__label">
+							<img src="images/hit.jpg" alt="Hit" class="item__label">
+							<img src="images/discount.jpg" alt="Discount" class="item__label">
+						</div>
+						<div class="item__price">
+							<span class="item__new-price">599 <span class="item__new-price_text_normal">грн.</span></span>
+							<span class="item__old-price">1 250 грн.</span>
+						</div>
+						<div class="item__buy">
+							<a href="#" class="item__buy-button">Купить товар</a>
+						</div>
+						<div class="item__help-links">
+							<a href="#" class="item__help-link item__compare-link">Сравнить товар</a>
+							<a href="#" class="item__help-link item__favorite-link">В избранное</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__mark-container"><span class="item__mark">Mark</span></div>
+						<a href="#" class="item__link">
+							<h2 class="item__title">Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany</h2>
+						</a>
+						<div class="item__rating">
+							<span class="item__stars">
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star">star</i>
+								<i class="material-icons item__star">star</i>
+								<a href="#" class="item__rating-link">Отзывы (10)</a>
+							</span>
+							<span class="item__stock">В наличии: 24шт.</span>
+						</div>
+						<div class="item__images">
+							<div class="item__img-container">
+								<img src="images/summer.jpg" alt="Summer" class="item__img">
+								<img src="images/new.jpg" alt="New" class="item__img">
+							</div>
+							<div class="item__photo-container">
+								<img src="images/item-photo-2.jpg" alt="Item photo" class="item__photo">
+							</div>
+						</div>
+						<div class="labels">
+							<img src="images/new-model.jpg" alt="New item" class="item__label">
+							<img src="images/hit.jpg" alt="Hit" class="item__label">
+						</div>
+						<div class="item__price">
+							<span class="item__new-price">599 <span class="item__new-price_text_normal">грн.</span></span>
+							<span class="item__old-price">1 250 грн.</span>
+						</div>
+						<div class="item__buy">
+							<a href="#" class="item__buy-button">Купить товар</a>
+						</div>
+						<div class="item__help-links">
+							<a href="#" class="item__help-link item__compare-link">Сравнить товар</a>
+							<a href="#" class="item__help-link item__favorite-link">В избранное</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__mark-container"><span class="item__mark">Mark</span></div>
+						<a href="#" class="item__link">
+							<h2 class="item__title">Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany</h2>
+						</a>
+						<div class="item__rating">
+							<span class="item__stars">
+								<i class="material-icons item__star">star</i>
+								<i class="material-icons item__star">star</i>
+								<i class="material-icons item__star">star</i>
+								<i class="material-icons item__star">star</i>
+								<i class="material-icons item__star">star</i>
+								<a href="#" class="item__rating-link">Без отзывов</a>
+							</span>
+							<span class="item__stock">В наличии: 24шт.</span>
+						</div>
+						<div class="item__images">
+							<div class="item__img-container">
+								<img src="images/summer.jpg" alt="Summer" class="item__img">
+								<img src="images/passenger-car.jpg" alt="Car" class="item__img">
+								<img src="images/new.jpg" alt="New" class="item__img">
+							</div>
+							<div class="item__photo-container">
+								<img src="images/item-photo-3.jpg" alt="Item photo" class="item__photo">
+							</div>
+						</div>
+						<div class="labels">
+							<img src="images/new-model.jpg" alt="New item" class="item__label">
+						</div>
+						<div class="item__price">
+							<span class="item__new-price">9 570 <span class="item__new-price_text_normal">грн.</span></span>
+							<span class="item__old-price">11 250 грн.</span>
+						</div>
+						<div class="item__buy">
+							<a href="#" class="item__buy-button">Купить товар</a>
+						</div>
+						<div class="item__help-links">
+							<a href="#" class="item__help-link item__compare-link">Сравнить товар</a>
+							<a href="#" class="item__help-link item__favorite-link">В избранное</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__mark-container"><span class="item__mark">Mark</span></div>
+						<a href="#" class="item__link">
+							<h2 class="item__title">Антифриз Fosser Antifreeze</h2>
+						</a>
+						<div class="item__rating">
+							<span class="item__stars">
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<i class="material-icons item__star item__star_color_orange">star</i>
+								<a href="#" class="item__rating-link">Отзывы (10)</a>
+							</span>
+							<span class="item__stock">В наличии: 24шт.</span>
+						</div>
+						<div class="item__images">
+							<div class="item__img-container">
+								<img src="images/summer.jpg" alt="Summer" class="item__img">
+								<img src="images/passenger-car.jpg" alt="Car" class="item__img">
+							</div>
+							<div class="item__photo-container">
+								<img src="images/item-photo-4.jpg" alt="Item photo" class="item__photo">
+							</div>
+						</div>
+						<div class="labels"></div>
+						<div class="item__price">
+							<span class="item__new-price">599 <span class="item__new-price_text_normal">грн.</span></span>
+							<span class="item__old-price"></span>
+						</div>
+						<div class="item__buy">
+							<a href="#" class="item__buy-button">Купить товар</a>
+						</div>
+						<div class="item__help-links">
+							<a href="#" class="item__help-link item__compare-link">Сравнить товар</a>
+							<a href="#" class="item__help-link item__favorite-link">В избранное</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="footer__block1">
+					<h2 class="footer__block-header">Блок 1</h2>
+					<p class="footer__block1-text">Будьте в курсе новостей и новинок!</p>
+					<p class="footer__block1-sign-text">Подписывайтесь на рассылку</p>
+					<form action="#" id="sign-form" method="post" class="sign-form">
+						<input type="email" name="email" placeholder="Укажите свой email для подписки" class="field sign-form__email" pattern="^\S+@\S+\.\S+$" required>
+						<button type="submit" class="action-link sign-form__submit">Подписаться</button>
+					</form>
+
+				</div>
+				<div class="footer__block2">
+					<div class="footer__link-block footer__link-block1">
+						<h2 class="footer__block-header footer__link-block-header">Блок ссылок 1</h2>
+						<ul class="footer__link-list">
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 1</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 2</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 3</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 4</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__link-block footer__link-block2">
+						<h2 class="footer__block-header footer__link-block-header">Блок 2</h2>
+						<ul class="footer__link-list">
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 1</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 2</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 3</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 4</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__link-block footer__link-block3">
+						<h2 class="footer__block-header footer__link-block-header">Блок ссылок 3</h2>
+						<ul class="footer__link-list">
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 1</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 2</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 3</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Ссылка 4</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__block3">
+					<div class="footer__logo">
+						<img src="images/logo-footer.jpg" alt="Лого">
+						<div class="footer__logo-text">&copy; Copyright 2017. Тестовое задание Wezom</div>
+					</div>
+					<div class="footer__social-links">
+						<a href="#" class="footer__social-link">
+							<i class="fa fa-vk"></i>
+						</a>
+						<a href="#" class="footer__social-link">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#" class="footer__social-link">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#" class="footer__social-link">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+					</div>
+					<div class="footer__wezom">
+						<img src="images/wezom.jpg" alt="Wezom">
+						<div class="footer__wezom-texts">
+							<p class="footer__wezom-text footer__wezom-text_color_grey">Разработка тестового</p>
+							<p class="footer__wezom-text">Wezom Agency</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div id="sign-in-form" class="sign-in" style="display:none;">
+			<div class="sign-in__forms">
+				<div class="sign-in__main-form-container">
+					<h2 class="sign-in__form-header">Вход в личный кабинет</h2>
+					<form action="#" method="post" class="sign-in__main-form">
+						<div class="sign-in__form-label">
+							<label for="email">Ваш email</label>
+						</div>
+						<div>
+							<input type="email" id="email" name="email" placeholder="mikel_ivanov98@gmail.com" class="sign-in__form-field" pattern="^\S+@\S+\.\S+$" required>
+						</div>
+						<div class="sign-in__form-label">
+							<label for="password">Пароль</label>
+						</div>
+						<div>
+							<input type="password" id="password" name="password" class="sign-in__form-field" placeholder="********" minlength="4" title="Минимальное кол-во символов 4" required>
+						</div>
+						<div class="sign-in__form-checkbox">
+							<input type="checkbox" id="remember" name="remember" value="true">
+  							<label for="remember" class="sign-in__form-label sign-in__form-label_margin">Запомнить меня</label>
+						</div>
+						<div class="sign-in__help-links">
+							<a href="#" class="sign-in__help-link">Забыли пароль?</a>
+							<a href="#" class="sign-in__help-link">Регистрация</a>
+						</div>
+						<input type="submit" class="sign-in__button" value="Войти в личный кабинет">
+					</form>
+				</div>
+				<div class="sign-in__social-links">
+					<h2 class="sign-in__form-header">Войти с помощью</h2>
+					<div class="sign-in__social-links-container">
+						<a href="#" class="sign-in__social-link">
+							<i class="fa fa-facebook" style='font-size:16px'></i>
+							<span>&nbsp;&nbsp;&nbsp;Facebook</span>
+						</a>
+						<a href="#" class="sign-in__social-link">
+							<i class="fa fa-twitter" style='font-size:16px'></i>
+							<span>&nbsp;&nbsp;&nbsp;Twitter</span>
+						</a>
+						<a href="#" class="sign-in__social-link sign-in__google-link">
+							<span class="sign-in__google-text">Google</span>
+						</a>
+					</div>
+				</div>
+				<div class="sign-in__close-button"></div>
+			</div>
+		</div>
+		<div id="callback" class="callback" style="display:none;">
+			<div class="callback__form-container">
+				<h2 class="callback__form-header">Перезвоните мне</h2>
+				<form action="#" method="post" class="callback__form">
+					<div class="callback__form-label">
+						<label for="phone">Номер телефона</label>
+					</div>
+					<div>
+						<input type="phone" id="phone" name="phone" class="callback__form-field" placeholder="+38(0__)___-__-__" required>
+					</div>
+					<input type="submit" class="callback__form-button" value="Перезвоните мне">
+				</form>
+				<div class="callback__close-button"></div>
+			</div>
+		</div>
+		<div class="successSign" style="display: none;">
+			<p class="successSign__text">Вы успешно подписаны на рассылку.</p>
+			<button class="successSign__btn">Ok</button>
+		</div>
+
+	</body>
+	<script src="js/script.js"></script>
+</html>
